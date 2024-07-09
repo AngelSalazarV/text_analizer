@@ -18,7 +18,7 @@ number            [0-9]
 tilde_lower      (\xC3[\xA1\xA9\xAD\xB3\xBA])
 tilde_upper      (\xC3[\x81\x89\x8D\x93\x9A])
 utf8_letter      ({letter}|{tilde_lower}|{tilde_upper})
-punctuation      [,.;]
+punctuation      [,.;:]
 
 %%
 

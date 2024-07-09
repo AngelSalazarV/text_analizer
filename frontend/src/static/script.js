@@ -1,7 +1,7 @@
 document.getElementById('analyzeButton').addEventListener('click', function() {
   const inputText = document.getElementById('inputText').value;
 
-  fetch('/analyze', {
+  fetch('analyze', {
       method: 'POST',
       headers: {
           'Content-Type': 'application/json'
