@@ -41,3 +41,18 @@ pre {
   padding: 10px;
   white-space: pre-wrap;
 }
+
+.container-main {
+  flex-direction: column;
+}
+.stadistics {
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+.stadistic-card {
+  background-color: #f3f3f3;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}

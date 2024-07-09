@@ -1,6 +1,5 @@
 document.getElementById('analyzeButton').addEventListener('click', function() {
   const inputText = document.getElementById('inputText').value;
-  console.log('inputText:', inputText)
 
   fetch('/analyze', {
       method: 'POST',
@@ -15,6 +14,14 @@ document.getElementById('analyzeButton').addEventListener('click', function() {
           document.getElementById('outputText').textContent = 'Error: ' + data.error;
       } else {
           document.getElementById('outputText').textContent = data.output;
+
+          // Actualizar las estadísticas
+          document.getElementById('words').textContent = data.statistics.words;
+          document.getElementById('words-tilde').textContent = data.statistics.wordsWithTilde;
+          document.getElementById('characters').textContent = data.statistics.characters;
+          document.getElementById('vowels').textContent = data.statistics.vowels;
+          document.getElementById('consonants').textContent = data.statistics.consonants;
+          document.getElementById('puntuations').textContent = data.statistics.punctuations;
       }
   })
   .catch(error => {
