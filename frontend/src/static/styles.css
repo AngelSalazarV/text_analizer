@@ -1,18 +1,20 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f3f3f3;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: #2D2D2D;
   padding: 20px;
 }
 
-.container {
+.container-analizer {
   max-width: 600px;
   margin: 0 auto;
-  background: #fff;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  background: linear-gradient(0deg, #323232, #515151);
+  border-radius: 20px;
+  padding: 10px 20px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
+  color: #fff;
   text-align: center;
 }
 
@@ -20,39 +22,63 @@ textarea {
   width: 100%;
   height: 150px;
   margin-bottom: 20px;
+  background-color: #FCFCFC;
 }
 
 button {
   display: block;
   width: 100%;
   padding: 10px;
-  background-color: #0066cc;
+  background-color: #2A2A29;
+  border: 1px solid #12E2E2;
+  border-radius: 20px;
   color: #fff;
-  border: none;
+  font-size: 16px;
+  font-weight: bold;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #004999;
+  background-color: #0DB0B0;
 }
 
 pre {
-  background: #e3e3e3;
+  background-color: #FCFCFC;
   padding: 10px;
   white-space: pre-wrap;
 }
 
-.container-main {
+.container-stadistic {
   flex-direction: column;
 }
+
+.container-stadistic h2 {
+  color: #fff;
+  font-size: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
 .stadistics {
-  display:grid;
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   margin-top: 20px;
 }
+
 .stadistic-card {
-  background-color: #f3f3f3;
+  background: linear-gradient(0deg, #323232, #515151);
   padding: 20px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
+.stadistic-card p {
+  color: #fff;
+  font-size: 20px;
+}
+
+.h3-stadistic {
+  color: #fff;
+  font-size: 20px;
 }
